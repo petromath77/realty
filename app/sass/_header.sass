@@ -1,13 +1,26 @@
 header
 	background: url('../img/header_bg.jpg') center fixed
 	background-size: cover
+	min-height: 700px
 	height: 100vh
 a.logo
 	display: block
 	margin-top: 20px
+.head_desc
+	margin: 400px 0 0
+	text-align: center
 .hamburger
-	position: absolute
+	position: fixed
 	right: 0
 	top: 20px
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
 		background-color: #6d6d6d
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+	margin-top: 20px
+.mm-panel.mm-hasnavbar .mm-navbar
+	height: 80px
+.mm-title
+	img
+		display: block
+		margin: 10px auto 20px
+
