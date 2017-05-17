@@ -38,6 +38,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+h1
+	margin: 0
 
 .img-responsive
 	display: block
@@ -45,8 +47,13 @@ body
 	height: auto
 
 section
-	padding: 50px 0 
+	padding: 30px 0 
 	h1
 		text-align: center
+		+sect_h1($default-font, 30px, 30px, 2px, uppercase)
+		font-weight: bold
+		margin-bottom: 30px
+
+
 
 @import "media" // Всегда в конце
