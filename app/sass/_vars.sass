@@ -1,4 +1,7 @@
 $default-font: "pt-sans", sans-serif
+$default-bold: "pt-sans-bold", sans-serif
+$color_p: #808080
+$color_w: #fff
 
 =sect_h1($font_fam, $font_size, $font_height, $lett_space, $txt_trans)
 	font-family: $font_fam
@@ -11,4 +14,9 @@ $default-font: "pt-sans", sans-serif
 	font-family: $font_fam
 	font-size: $font_size
 	line-height: $font_height
+
+=transition($trans_prop, $trans_durat, $trans_func)
+	transition-property: $trans_prop
+	transition-duration: $trans_durat
+	transition-timing-function: $trans_func
 

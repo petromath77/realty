@@ -1,14 +1,31 @@
 header
-	background: url('../img/head_bg.jpg') center -210px fixed
+	background: url('../img/head_bg1.jpg') center 0px fixed
 	background-size: cover
 	min-height: 700px
 	height: 100vh
+	position: relative
 a.logo
 	display: block
-	margin-top: 30px
+	margin-top: 20px
+
 .head_desc
 	margin: 200px 0 0
 	text-align: center
+	h1
+		color: #fff
+		text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+.cont_butt
+	display: inline-block
+	padding: 10px 20px
+	background-color: #b89671
+	border-radius: 5px
+	margin-top: 20px
+	+sect_h1($default-bold, 18px, 18px, 1px, none)
+	color: $color_w
+	+transition(all, 0.5s, ease-in-out)
+	&:hover,&:focus
+		background-color: #554444
+		color: #b89671
 .hamburger
 	position: fixed
 	right: 0
@@ -17,6 +34,14 @@ a.logo
 		background-color: #868585
 .mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	margin-top: 20px
+.mm-menu.mm-fx-listitems-slide .mm-listview>li
+	+transition(all, 0.2s, ease-in-out)
+	&:hover
+		background-color: #5a5a5a
+.mm-selected
+		background-color: #5a5a5a
+.mm-menu.mm-theme-dark .mm-listview>li a:not(.mm-next)
+	font-size: 16px
 .mm-panel.mm-hasnavbar .mm-navbar
 	height: 80px
 .mm-title
@@ -25,7 +50,7 @@ a.logo
 		margin: 10px auto 20px
 .scroll
 	text-align: center
-	margin-top: 270px
+	margin-top: 380px
 	img
 		width: 100px
 

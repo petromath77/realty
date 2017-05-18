@@ -38,9 +38,11 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-h1
+a:hover,a:focus
+	text-decoration: none
+h1,p
 	margin: 0
-
+	color: $color_p
 .img-responsive
 	display: block
 	max-width: 100%
@@ -50,7 +52,7 @@ section
 	padding: 30px 0 
 	h1
 		text-align: center
-		+sect_h1($default-font, 30px, 30px, 2px, uppercase)
+		+sect_h1($default-bold, 30px, 30px, 2px, uppercase)
 		font-weight: bold
 		margin-bottom: 30px
 
