@@ -9,17 +9,21 @@ a.logo
 	margin-top: 20px
 
 .head_desc
-	margin: 200px 0 0
+	margin: 230px 0 0
 	text-align: center
 	h1
+		+sect_h1($default-bold, 30px, 30px, 1px, uppercase)
 		color: #fff
 		text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+		margin-bottom: 15px
+	p
+		+sect_p($default-font, 18px, 18px)
 .cont_butt
 	display: inline-block
 	padding: 10px 20px
 	background-color: #b89671
 	border-radius: 5px
-	margin-top: 20px
+	margin-top: 30px
 	+sect_h1($default-bold, 18px, 18px, 1px, none)
 	color: $color_w
 	+transition(all, 0.5s, ease-in-out)
