@@ -18,4 +18,6 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 		$('a.logo').css('opacity', '1');
 	});
+
+	$(function () { $("input, select, textarea").not("[type=submit]").jqBootstrapValidation(); } );
 });

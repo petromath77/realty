@@ -7,30 +7,31 @@
 @import "blog"
 @import "apartments"
 @import "testimonials"
+@import "contact"
 @import "footer"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: $color_gr_w
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: $color_gr_w
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: $color_gr_w
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: $color_gr_w
 	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: $color_p
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: $color_p
 
 html, body
 	height: 100%
@@ -43,6 +44,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	color: $color_p
 a:hover,a:focus
 	text-decoration: none
 h1,p
