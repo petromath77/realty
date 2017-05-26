@@ -18,13 +18,13 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 		$('a.logo').css('opacity', '1');
 	});
+        
+	$(".mix_wrap").mixItUp();
 
 	$('.filter_wrap li').on('click', function(){
 		$('.filter_wrap li').removeClass('active');
 		$(this).addClass('active');
 	});
-
-	var mixer = mixitup('.mix_wrap');
 
 	$(function () { $('input, select, textarea').not('[type=submit]').jqBootstrapValidation(); } );
 
