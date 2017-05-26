@@ -19,5 +19,14 @@ $(function() {
 		$('a.logo').css('opacity', '1');
 	});
 
-	$(function () { $("input, select, textarea").not("[type=submit]").jqBootstrapValidation(); } );
+	$('.filter_wrap li').on('click', function(){
+		$('.filter_wrap li').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	var mixer = mixitup('.mix_wrap');
+
+	$(function () { $('input, select, textarea').not('[type=submit]').jqBootstrapValidation(); } );
+
+
 });
