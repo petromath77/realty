@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
 	// Custom JS
 	$('#my-menu').mmenu({
@@ -28,5 +28,8 @@ $(function() {
 
 	$(function () { $('input, select, textarea').not('[type=submit]').jqBootstrapValidation(); } );
 
-
+});
+$(window).on('load', function() { 
+	$('.loader_inner').fadeOut(); 
+	$('.loader').delay(400).fadeOut('slow'); 
 });
